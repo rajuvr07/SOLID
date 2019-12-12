@@ -9,6 +9,7 @@ namespace PrincipleO
 {
     class Program
     {
+        //https://dotnettutorials.net/lesson/dependency-inversion-principle/
         static void Main(string[] args)
         {
             Invoice FInvoice = new FinalInvoice();
@@ -16,7 +17,7 @@ namespace PrincipleO
             Invoice RInvoice = new RecurringInvoice();
             double FInvoiceAmount = FInvoice.GetInvoiceDiscount(10000);
             double PInvoiceAmount = PInvoice.GetInvoiceDiscount(10000);
-            double RInvoiceAmount = RInvoice.GetInvoiceDiscount(10000)
+            double RInvoiceAmount = RInvoice.GetInvoiceDiscount(10000);
         }
     }
 }
